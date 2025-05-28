@@ -14,13 +14,10 @@ function App() {
     setOpenModal(true);
   };
 
-  const handleModalOpen = function () {
-    setOpenModal((prev) => !prev);
-  };
-
   return (
     <>
       <ShoesStore>
+        {/* product list */}
         <ProductsList>
           {DATA.map((shoes) => {
             console.log(shoes);
@@ -34,6 +31,7 @@ function App() {
           })}
         </ProductsList>
 
+        {/* modal details */}
         {seletedProduct && (
           <ModalDetails
             isOpen={modalOpen}
