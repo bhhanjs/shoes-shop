@@ -12,7 +12,7 @@ import { Grid } from "lucide-react";
 
 const ModalDetails = ({ product, isOpen, onOpen }) => {
   const productName = product.name;
-  const { id, image, price, description, quantity, alias } = product;
+  const {image, price, description, quantity, alias } = product;
   return (
     <Dialog open={isOpen} onOpenChange={onOpen}>
       <CustomDialogContent className="flex flex-col gap-4 md:flex-row md:gap-9 p-12">
